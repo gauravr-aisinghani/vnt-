@@ -1,6 +1,9 @@
 import { makeStyles } from "@mui/styles";
 
 export const useStyles = makeStyles({
+    p1:{
+        fontSize:'1vw'
+    },
     footer:{
         display:'flex',
         flexDirection:'column',
@@ -8,15 +11,15 @@ export const useStyles = makeStyles({
         justifyContent:'center',
         gap:'2vw',
         backgroundColor:'#d7d9ff;',
-        padding:'10vh 0vh',
-        fontSize:'1.2vw'
+        padding:'10vh 0vh'
     },
     links:{
         display:'flex',
         alignItems:'center',
         justifyContent:'center',
         gap:'2vw',
-        marginBottom:'5vh'
+        marginBottom:'5vh',
+        fontSize:'2.5vh'
     },
     link:{
         textDecoration:'none',
@@ -38,7 +41,7 @@ export const useStyles = makeStyles({
         padding:'0.6vw',
         color:'#000'
     },
-    p:{
-        fontSize:'1.2vw'
+    p2:{
+        fontSize:'1vw'
     }
 })

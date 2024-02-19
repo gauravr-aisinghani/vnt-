@@ -12,12 +12,12 @@ function Footer() {
   return (
    <>
    <footer className={classes.footer}>
-    <p>Important Links</p>
+    <p className={classes.p1}>Important Links</p>
 
     <div className={classes.links}>
+    <Link to="/" className={classes.link}>Privacy Policy</Link>
     <Link to="/" className={classes.link}>Refund and Returns Policy</Link>
     <Link to="/" className={classes.link}>Contact Us</Link>
-    <Link to="/" className={classes.link}>Privacy Policy</Link>
     <Link to="/" className={classes.link}>Terms & Conditions</Link>
     <Link to="/" className={classes.link}>Shipping Policy</Link>
     </div>
@@ -30,7 +30,7 @@ function Footer() {
     <Link className={classes.slink}><InstagramIcon/></Link>
     </div>
 
-    <p className={classes.p}>@ 2023 VNT Fashion Clothing.</p>
+    <p className={classes.p2}>@ 2023 VNT Fashion Clothing.</p>
    </footer>
    </>
   )
