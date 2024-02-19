@@ -1,8 +1,9 @@
 
-import Header from "./componetents/user/header/Header";
 import Footer from "./componetents/user/footer/Footer";
-import { Outlet } from "react-router-dom";
+import Header from "./componetents/user/header/Header";
 // import Home from "./componetents/user/home/Home";
+import { Outlet } from "react-router-dom";
+
 
 
 function App() {

@@ -6,13 +6,15 @@ import Contact from "../src/componetents/user/contact/Contact.jsx"
 import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import About from './componetents/user/about/About.jsx'
-
+import MyAccount from './componetents/user/myaccount/MyAccount.jsx'
 const route = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}> 
-    <Route path='home' element={<Home/>}/>
+    <Route path='' element={<Home/>}/>
     <Route path='about' element={<About/>}/>
     <Route path='about/contact' element={<Contact/>}/>
+    <Route path="/my-account" element={<MyAccount/>}/>
+    
     </Route>
   )
 )
