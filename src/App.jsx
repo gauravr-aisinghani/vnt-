@@ -1,7 +1,6 @@
 
-import Footer from "./componetents/user/footer/Footer";
-import Header from "./componetents/user/header/Header";
-// import Home from "./componetents/user/home/Home";
+import Footer from "./components/user/footer/Footer";
+import Header from "./components/user/header/Header";
 import { Outlet } from "react-router-dom";
 
 

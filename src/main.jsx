@@ -1,12 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import Home from "../src/componetents/user/home/Home.jsx"
-import Contact from "../src/componetents/user/contact/Contact.jsx"
+import Home from "./components/user/home/Home.jsx"
+import Contact from "./components/user/contact/Contact.jsx"
 import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-import About from './componetents/user/about/About.jsx'
-import MyAccount from './componetents/user/myaccount/MyAccount.jsx'
+import About from './components/user/about/About.jsx'
+import MyAccount from './components/user/myaccount/MyAccount.jsx'
+
+
 const route = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}> 
