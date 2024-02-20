@@ -7,7 +7,8 @@ import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import About from './components/user/about/About.jsx'
 import MyAccount from './components/user/myaccount/MyAccount.jsx'
-
+import Signup from './components/user/myaccount/Signup.jsx'
+import ProductInfo from './components/user/productinfo/ProductInfo.jsx'
 
 
 
@@ -18,7 +19,8 @@ const route = createBrowserRouter(
     <Route path='about' element={<About/>}/>
     <Route path='about/contact' element={<Contact/>}/>
     <Route path="/my-account" element={<MyAccount/>}/>
-    
+    <Route path="/signup" element={<Signup/>}/>
+    <Route path="/home/productinfo" element={<ProductInfo/>}/>
     </Route>
   )
 )

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useStyles } from './FooterCss'
 import {Link} from 'react-router-dom'
 
