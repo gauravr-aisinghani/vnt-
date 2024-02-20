@@ -20,25 +20,33 @@ export const useStyles = makeStyles({
         width: "100%",
         height: "60vh",
         zIndex: 0, 
+        marginBottom:"30px"
+
       },
       headings:{
         textAlign:'center',
         fontSize:'2.7rem',
+        marginBottom:'30px',
         background: 'linear-gradient(to right, #ff8a00, #e52e71)',
         color:'transparent',
         WebkitBackgroundClip: 'text',
       },
       contentBox:{
         width:'90%',
-        margin:'auto'
+        margin:'auto',
+        marginTop:'30px',
+        
       },
       productinfo:{
         width:'100%',
         textAlign:'center',
         "& p":{
             fontWeight:"500",
-            fontSize:'18px'
+            fontSize:'18px',
+            marginTop:'10px'
         },
-        height:'40vh',
+        height:'20%',
+        marginTop:'10px'
+        
       }
 });

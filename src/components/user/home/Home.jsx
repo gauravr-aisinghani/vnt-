@@ -63,7 +63,7 @@ const displayAllShirts=()=>{
   return(
   shirts.map((item)=>(
     <Grid item xs={12} sm={6} md={4} lg={3} key={item.productid} onClick={()=>navigate('home/productinfo')} >
-    <img src={`${ServerUrl}/images/${item.image}`} style={{width:'100%'}}/>
+    <img src={`${ServerUrl}/images/${item.image}`} style={{width:'100%',height:'65%'}}/>
       <div className={classes.productinfo}>
       <h3>{item.description}</h3>
       <p>&#x20B9;{item.price}</p>
@@ -79,12 +79,12 @@ const displayAllShirts=()=>{
 //Display All shirts with map//
 
 //Display All Jeans
- 
+
 const displayAllJeans=()=>{
   return(
   jeans.map((item)=>(
     <Grid item xs={12} sm={6} md={4} lg={3} key={item.productid}>
-    <img src={`${ServerUrl}/images/${item.image}`} style={{width:'100%'}}/>
+    <img src={`${ServerUrl}/images/${item.image}`} style={{width:'100%',height:'65%'}}/>
       <div className={classes.productinfo}>
       <h3>{item.description}</h3>
       <p>&#x20B9;{item.price}</p>
@@ -103,7 +103,7 @@ const displayAllTshirts=()=>{
   return(
   tshirts.map((item)=>(
     <Grid item xs={12} sm={6} md={4} lg={3} key={item.productid}>
-    <img src={`${ServerUrl}/images/${item.image}`} style={{width:'100%'}}/>
+    <img src={`${ServerUrl}/images/${item.image}`} style={{width:'100%',height:'65%'}}/>
       <div className={classes.productinfo}>
       <h3>{item.description}</h3>
       <p>&#x20B9;{item.price}</p>
@@ -122,7 +122,7 @@ const displayAllJackets=()=>{
   return(
   jackets.map((item)=>(
     <Grid item xs={12} sm={6} md={4} lg={3} key={item.productid}>
-    <img src={`${ServerUrl}/images/${item.image}`} style={{width:'100%'}}/>
+    <img src={`${ServerUrl}/images/${item.image}`} style={{width:'100%',height:'65%'}}/>
       <div className={classes.productinfo}>
       <h3>{item.description}</h3>
       <p>&#x20B9;{item.price}</p>
@@ -143,17 +143,19 @@ const displayAllJackets=()=>{
         alt="Your Alt Text"
         className={classes.image}
       />
-      <div className={classes.contentBox}>
-        <h2 className={classes.headings}>Shirts</h2>
+
+<div className={classes.contentBox}>
+        <h2 className={classes.headings}>Jackets</h2>
         <Grid container spacing={1}>
-          
-          {displayAllShirts()}
+         {displayAllJackets()}
+
          
 
 
         </Grid>
           
       </div>
+      
 
       <div className={classes.contentBox}>
         <h2 className={classes.headings}>Jeans</h2>
@@ -175,16 +177,17 @@ const displayAllJackets=()=>{
           
       </div>
       <div className={classes.contentBox}>
-        <h2 className={classes.headings}>Jackets</h2>
+        <h2 className={classes.headings}>Shirts</h2>
         <Grid container spacing={1}>
-         {displayAllJackets()}
-
+          
+          {displayAllShirts()}
          
 
 
         </Grid>
           
       </div>
+     
     </div>
   )
 }

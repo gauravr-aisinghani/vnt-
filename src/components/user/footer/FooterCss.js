@@ -11,7 +11,8 @@ export const useStyles = makeStyles({
         justifyContent:'center',
         gap:'2vw',
         backgroundColor:'#d7d9ff;',
-        padding:'10vh 0vh'
+        padding:'10vh 0vh',
+        marginTop:'30px'
     },
     links:{
         display:'flex',
