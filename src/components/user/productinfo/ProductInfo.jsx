@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getData,ServerUrl } from "../../services/ServerServices";
 import { useStyles } from './productinfoCss';
+import { Link } from 'react-router-dom';
 
 
 function ProductInfo() {
@@ -25,7 +26,7 @@ const displayShirt = () =>{
     return (
         Shirts.map((item)=>{
             if(item.productid == 10){
-                return <div className={classes.shirtInfo}>
+                return <div className={classes.shirtInfo} key={item.productid}>
                    <div className={classes.shirtImg}>
                    <img src={`${ServerUrl}/images/${item.image}`} />
                     <img src={`${ServerUrl}/images/${item.image}`} />
@@ -42,10 +43,28 @@ const displayShirt = () =>{
     )
 }
 
+const sideToggle = () =>{
+  return (
+    Shirts.map((item)=>{
+        if(item.productid == 10){
+            return <div className = {classes.sidebar} key = {item.productid}>
+               <div className={classes.sideimgs}>
+               <Link><img src={`${ServerUrl}/images/${item.image}`} /></Link>
+                <img src={`${ServerUrl}/images/${item.image}`} />
+               </div>
+            </div>
+        }
+    })
+)
+}
+
   return (
     <>
      <div className={classes.container}>
+      <div className={classes.container2}>
+        {sideToggle()}
         {displayShirt()}
+      </div>
         <h2>Related Products</h2>
      </div>
     </>
