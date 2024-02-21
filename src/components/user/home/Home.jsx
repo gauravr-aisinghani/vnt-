@@ -10,13 +10,12 @@ export default function Home() {
   const [jeans,setJeans]=useState([])
   const [tshirts,setTshirts]=useState([])
   const [jackets,setJackets]=useState([])
+
+
   //Fetching all shirts
   const fetch_all_shirts=async()=>{
     let result= await getData('product/fetch_all_shirts')
     setShirts(result.data)
-    
-
-
   }
 
   //Fetching all shirts
