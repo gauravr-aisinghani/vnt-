@@ -3,7 +3,9 @@ export const useStyles = makeStyles({
   
     mainContainer:{
         height:'80vh',
-        width:'100%'
+        width:'100%',
+        position:'relative',
+        paddingTop:'4vh'
     },
     box:{
        height:'100%',

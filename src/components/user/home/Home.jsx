@@ -12,6 +12,16 @@ export default function Home() {
   const [jackets,setJackets]=useState([])
 
 
+  //navigate to productinfo page
+  const handleClick=async(pid,cid)=>{
+   
+    navigate(`/home/productinfo`,{state:{productid:pid,categoryid:cid}})   
+ 
+ 
+  }
+  //navigate to productinfo page
+
+
   //Fetching all shirts
   const fetch_all_shirts=async()=>{
     let result= await getData('product/fetch_all_shirts')
@@ -61,8 +71,8 @@ export default function Home() {
 const displayAllShirts=()=>{
   return(
   shirts.map((item)=>(
-    <Grid item xs={12} sm={6} md={4} lg={3} key={item.productid} onClick={()=>navigate('home/productinfo')} >
-    <img src={`${ServerUrl}/images/${item.image}`} style={{width:'100%'}}/>
+    <Grid item xs={12} sm={6} md={4} lg={3} key={item.productid} onClick={()=>handleClick(item.productid,item.categoryid)} >
+    <img src={`${ServerUrl}/images/${item.image}`} style={{width:'100%',height:'65%'}}/>
       <div className={classes.productinfo}>
       <h3>{item.description}</h3>
       <p>&#x20B9;{item.price}</p>
@@ -82,8 +92,8 @@ const displayAllShirts=()=>{
 const displayAllJeans=()=>{
   return(
   jeans.map((item)=>(
-    <Grid item xs={12} sm={6} md={4} lg={3} key={item.productid}>
-    <img src={`${ServerUrl}/images/${item.image}`} style={{width:'100%'}}/>
+    <Grid item xs={12} sm={6} md={4} lg={3} key={item.productid} onClick={()=>handleClick(item.productid,item.categoryid)}>
+    <img src={`${ServerUrl}/images/${item.image}`} style={{width:'100%',height:'65%'}}/>
       <div className={classes.productinfo}>
       <h3>{item.description}</h3>
       <p>&#x20B9;{item.price}</p>
@@ -101,8 +111,8 @@ const displayAllJeans=()=>{
 const displayAllTshirts=()=>{
   return(
   tshirts.map((item)=>(
-    <Grid item xs={12} sm={6} md={4} lg={3} key={item.productid}>
-    <img src={`${ServerUrl}/images/${item.image}`} style={{width:'100%'}}/>
+    <Grid item xs={12} sm={6} md={4} lg={3} key={item.productid} onClick={()=>handleClick(item.productid,item.categoryid)}>
+    <img src={`${ServerUrl}/images/${item.image}`} style={{width:'100%',height:'65%'}}/>
       <div className={classes.productinfo}>
       <h3>{item.description}</h3>
       <p>&#x20B9;{item.price}</p>
@@ -120,8 +130,8 @@ const displayAllTshirts=()=>{
 const displayAllJackets=()=>{
   return(
   jackets.map((item)=>(
-    <Grid item xs={12} sm={6} md={4} lg={3} key={item.productid}>
-    <img src={`${ServerUrl}/images/${item.image}`} style={{width:'100%'}}/>
+    <Grid item xs={12} sm={6} md={4} lg={3} key={item.productid} onClick={()=>handleClick(item.productid,item.categoryid)}>
+    <img src={`${ServerUrl}/images/${item.image}`} style={{width:'100%',height:'65%'}}/>
       <div className={classes.productinfo}>
       <h3>{item.description}</h3>
       <p>&#x20B9;{item.price}</p>

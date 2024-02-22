@@ -9,6 +9,10 @@ export const useStyles = makeStyles({
         width:'100%',
         position:'relative',
         paddingTop:'10vh',
+        "& h2":{
+            fontSize:'3vw',
+            marginTop:'1.5vw'
+        }
     },
     shirtInfo:{
         width:'70%',
@@ -87,6 +91,28 @@ export const useStyles = makeStyles({
             width:'13vh',
 
         },
+    },
+    relatedProducts:{
+        // backgroundColor:'red',
+        width:'85%',
+        margin:'5vw 0vw',
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'start',
+        gap:'1vw',
+        fontSize:'1.2rem',
+        wordBreak:'break-word',
+        "& img":{
+            width:'18vw',
+            height:'50vh',
+            marginBottom:'0.8vw',
+            textAlign:'center'
+        },
+        "& h3":{
+            marginBottom:'0.5vw',
+            width:'80%',
+            margin:'auto'
+        }
     }
 })
 
