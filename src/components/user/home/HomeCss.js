@@ -21,7 +21,8 @@ export const useStyles = makeStyles({
         height: "60vh",
         position:'abosolute',
         zIndex:'1', 
-        marginTop:'10vh'
+        marginTop:'10vh',
+        marginBottom:"30px"
       },
       headings:{
         textAlign:'center',
@@ -29,18 +30,24 @@ export const useStyles = makeStyles({
         background: 'linear-gradient(to right, #ff8a00, #e52e71)',
         color:'transparent',
         WebkitBackgroundClip: 'text',
+        marginBottom:'30px'
       },
       contentBox:{
         width:'90%',
-        margin:'auto'
+        margin:'auto',
+        
+        marginTop:'30px'
       },
       productinfo:{
         width:'100%',
         textAlign:'center',
         "& p":{
             fontWeight:"500",
-            fontSize:'18px'
+            fontSize:'18px',
+            marginTop:'10px'
         },
-        height:'40vh',
+        height:'20%',
+        marginTop:'10px'
+        
       }
 });
