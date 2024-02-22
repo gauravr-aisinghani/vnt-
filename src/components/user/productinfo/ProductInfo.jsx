@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { getData,ServerUrl } from "../../services/ServerServices";
-import { useStyles } from './productinfoCss';
-import { Link } from 'react-router-dom';
+import { getData,ServerUrl } from "../../services/ServerServices"
+import { useStyles } from './productinfoCss'
 
 
 function ProductInfo() {
@@ -28,8 +27,8 @@ const displayShirt = () =>{
             if(item.productid == 10){
                 return <div className={classes.shirtInfo} key={item.productid}>
                    <div className={classes.shirtImg}>
-                   <img src={`${ServerUrl}/images/${item.image}`} />
-                    <img src={`${ServerUrl}/images/${item.image}`} />
+                   <img id='1' src={`${ServerUrl}/images/${item.image}`} />
+                    <img id='2' src={`${ServerUrl}/images/${item.image}`} />
                    </div>
                    <div className={classes.desc}>
                    <h1>{item.product}</h1>
@@ -49,14 +48,21 @@ const sideToggle = () =>{
         if(item.productid == 10){
             return <div className = {classes.sidebar} key = {item.productid}>
                <div className={classes.sideimgs}>
-               <Link><img src={`${ServerUrl}/images/${item.image}`} /></Link>
+
+               <a href='#1'>
                 <img src={`${ServerUrl}/images/${item.image}`} />
+                </a>
+
+                <a href='#2'>
+                <img src={`${ServerUrl}/images/${item.image}`} />
+                </a>
                </div>
             </div>
         }
     })
 )
 }
+
 
   return (
     <>
@@ -72,3 +78,6 @@ const sideToggle = () =>{
 }
 
 export default ProductInfo
+
+
+

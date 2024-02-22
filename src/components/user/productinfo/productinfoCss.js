@@ -8,7 +8,7 @@ export const useStyles = makeStyles({
         justifyContent:'center',
         width:'100%',
         position:'relative',
-        paddingTop:'10vh'
+        paddingTop:'10vh',
     },
     shirtInfo:{
         width:'70%',
@@ -30,6 +30,8 @@ export const useStyles = makeStyles({
         overflowY:'auto',
         maxHeight:'100vh',
         scrollbarWidth: 'none',
+        scrollBehavior:'smooth',
+        position:'sticky',
     },
     desc:{
         position:'sticky',
@@ -82,8 +84,9 @@ export const useStyles = makeStyles({
         gap:'2vh',
         marginTop:'10vh',
         "& img":{
-            width:'13vh'
-        }
+            width:'13vh',
+
+        },
     }
 })
 
