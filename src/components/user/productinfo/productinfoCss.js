@@ -6,7 +6,9 @@ export const useStyles = makeStyles({
         flexDirection:'column',
         alignItems:'center',
         justifyContent:'center',
-        width:'100%'
+        width:'100%',
+        position:'relative',
+        paddingTop:'10vh',
     },
     shirtInfo:{
         width:'70%',
@@ -15,24 +17,30 @@ export const useStyles = makeStyles({
         alignItems:'start',
         justifyContent:'center',
         gap:'5vw',
-        margin:'5vw 0vw',
+        margin:'2vw 0vw',
         "& img":{
             width:'25vw',
-        }
+        },
+        position:'relative'
     },
     shirtImg:{
         display:'flex',
         flexDirection:'column',
         gap:'1vw',
+        overflowY:'auto',
+        maxHeight:'100vh',
+        scrollbarWidth: 'none',
+        scrollBehavior:'smooth',
+        position:'sticky',
     },
     desc:{
+        position:'sticky',
         display:'flex',
         flexDirection:'column',
         alignItems:'start',
         justifyContent:'start',
         gap:'1vw',
         // backgroundColor:"green",
-        
         "& h1":{
             fontSize:'3vw'
         },
@@ -43,7 +51,8 @@ export const useStyles = makeStyles({
         },
         "& p":{
             fontSize:'1.5vw',
-        }
+        },
+        
     },
     addBtn:{
         backgroundColor:"#5c7ec1",
@@ -56,6 +65,28 @@ export const useStyles = makeStyles({
         "&:hover":{
             backgroundColor:"#1a76cb"
         }
+    },
+    container2:{
+        width:'100%',
+        display:'flex',
+        // backgroundColor:'red'  
+    },
+    sidebar:{
+        // backgroundColor:'blue',
+        width:'20%',
+        
+    },
+    sideimgs:{
+        display:'flex',
+        flexDirection:'column',
+        alignItems:'center',
+        justifyContent:'center',
+        gap:'2vh',
+        marginTop:'10vh',
+        "& img":{
+            width:'13vh',
+
+        },
     }
 })
 

@@ -4,6 +4,8 @@ export const useStyles=makeStyles(
         paper:{
             width:'100%',
             height:'80px',
+            position:'fixed',
+            zIndex:'5',
         },
         box:{
             width:'90%',
