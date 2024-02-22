@@ -98,21 +98,14 @@ export const useStyles = makeStyles({
         margin:'5vw 0vw',
         display:'flex',
         alignItems:'center',
-        justifyContent:'start',
+        justifyContent:'space-evenly',
         gap:'1vw',
         fontSize:'1.2rem',
-        wordBreak:'break-word',
+        textWrap:'wrap',
         "& img":{
-            width:'18vw',
+            width:'20vw',
             height:'50vh',
-            marginBottom:'0.8vw',
-            textAlign:'center'
+            marginBottom:'0.8vw'
         },
-        "& h3":{
-            marginBottom:'0.5vw',
-            width:'80%',
-            margin:'auto'
-        }
     }
 })
-
